@@ -8,6 +8,7 @@ import context.TestContextUI;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -77,15 +78,19 @@ public class LandingStepDefs extends TestBase {
 		testContextUI.initializePageObjectClasses(driver, scn);
 	}
 
-	@When("user clicks on login link")
+	/*@When("user clicks on login link")
 	public void user_clicks_on_login_link() {
-		testContextUI.landingPageObjects().clickLoginLinks();
-	}
+		//testContextUI.landingPageObjects().clickLoginLinks();
+	}*/
 
-	@Then("user should be redirected to the login page")
+	@And("user should be redirected to the login page")
 	public void user_should_be_redirected_to_the_login_page() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	
+		testContextUI.landingPageObjects().urlValidate();
+		testContextUI.landingPageObjects().getPageTitle();
+	
+	
 	}
 
 

@@ -8,10 +8,10 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		features="classpath:features/landing.feature",
+		features="classpath:features",
 		glue="stepdefs",
-        tags="",
-		//monochrome = true,
+        tags="@ui",
+		monochrome = true,
 		plugin = {"pretty",
 				"html:target/html/",
 				"json:target/json/file.json",

@@ -1,4 +1,6 @@
 package pageobjects;
+import static org.junit.Assert.assertTrue;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -12,7 +14,7 @@ public class LandingPageObjects extends Interact {
 	private static final Logger logger = LogManager.getLogger(LandingPageObjects.class);
 	Scenario scn;
 
-	private By txt_headerLoginLink = By.xpath("//*[@id=\"headerLoginLink\"]/span");
+	private By btn_loginbutton = By.xpath("//*[@id=\"LoginButton\"]");
 
 
 	public LandingPageObjects(WebDriver driver, Scenario s) {
@@ -20,11 +22,25 @@ public class LandingPageObjects extends Interact {
 		this.scn = s;
 	}
 	
-	public void clickLoginLinks()
+	public void urlValidate()
 	{
-       clickElement(txt_headerLoginLink);
+		boolean status = validateElementIsDisplayed(btn_loginbutton);
+		System.out.println(status);
+		if(status)
+		{
+			System.out.println("Login page loaded");
+		}
+		else
+		{
+			System.out.println("Login page is NOT loaded");
+		}
+		assertTrue(status);
 	}
 	
+	public void getPageTitle()
+	{
+		System.out.println("Page title is : " + getDriver().getTitle());
+	}
 
 	
 	

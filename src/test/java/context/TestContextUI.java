@@ -11,6 +11,7 @@ public class TestContextUI {
 	private LandingPageObjects landingPageObjects;
 	private LoginPageObjects loginPageObjects;
 
+
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -31,6 +32,7 @@ public class TestContextUI {
 	public void initializePageObjectClasses(WebDriver driver,Scenario scn) {
 		landingPageObjects = new LandingPageObjects(driver,scn);
 		loginPageObjects = new LoginPageObjects(driver,scn);
+
 
 	}
 	

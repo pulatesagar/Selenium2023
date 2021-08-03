@@ -90,7 +90,7 @@
 							<div class="navbar-text nav-title flex" id="pageTitle">Dashboard</div>
 							<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">May 24, 2021 02:35:24 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 3, 2021 04:44:13 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 							</ul>
 						</div>
@@ -104,7 +104,7 @@
 						<span class="">Features</span>
 					</div>
 					<div class="py-3 text-center text-md text-success">
-						1
+						2
 					</div>
 					<div class="d-flex">
 						<span class="flex text-muted">Out of which 0 passed</span>
@@ -118,7 +118,7 @@
 						<span class="">Scenarios</span>
 					</div>
 					<div class="py-3 text-center text-md text-primary">
-						1
+						3
 					</div>
 					<div class="d-flex">
 						<span class="flex text-muted">Out of which 0 passed</span>
@@ -132,7 +132,7 @@
 						<span class="">Start</span>
 					</div>
 					<div class="py-3 text-center text-md">
-						May 24, 2021 02:35:24 PM
+						Aug 3, 2021 04:44:13 PM
 					</div>
 					<div class="d-flex">
 						<span class="flex"></span>
@@ -146,7 +146,7 @@
 						<span class="">Time Taken</span>
 					</div>
 					<div class="py-3 text-center text-md">
-						0h 0m 36s+326ms
+						0h 1m 22s+2ms
 					</div>
 					<div class="d-flex">
 						<span class="flex"></span>
@@ -177,7 +177,7 @@
 						</div>
 					</div>
 					<div class="box-footer">
-						<small class="text-muted">0 passed, 1 failed and 0 skipped</small>
+						<small class="text-muted">0 passed, 2 failed and 0 skipped</small>
 					</div>
 				</div>
 			</div>
@@ -202,7 +202,7 @@
 						</div>
 					</div>
 					<div class="box-footer">
-						<small class="text-muted">0 passed, 1 failed and 0 skipped</small>
+						<small class="text-muted">0 passed, 3 failed and 0 skipped</small>
 					</div>
 				</div>
 			</div>
@@ -228,7 +228,7 @@
 						</div>
 					</div>
 					<div class="box-footer">
-						<small class="text-muted">2 passed, 2 failed and 1 skipped</small>
+						<small class="text-muted">3 passed, 6 failed and 9 skipped</small>
 					</div>
 				</div>
 			</div>
@@ -261,13 +261,25 @@
 						<tr>
 							<td>@ui</td>
 							<td>0</td>
-							<td>2</td>
+							<td>5</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>@login</td>
 							<td>0</td>
 							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@validLogin</td>
+							<td>0</td>
+							<td>2</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@invalidLogin</td>
+							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -293,7 +305,7 @@
 		                datasets: [{
 		                    borderColor: 'transparent',
 		                    data: [
-		                    	0, 1, 0, 0, 0, 0
+		                    	0, 2, 0, 0, 0, 0
 		                    ],
 		                    backgroundColor: [
 		                        "#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
@@ -327,7 +339,7 @@
 			                datasets: [{
 			                    borderColor: 'transparent',
 			                    data: [
-			                    	0, 1, 0, 0, 0, 0
+			                    	0, 3, 0, 0, 0, 0
 			                    ],
 			                    backgroundColor: [
 			                        "#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
@@ -362,7 +374,7 @@
 			                datasets: [{
 			                    borderColor: 'transparent',
 			                    data: [
-			                    	2, 2, 0, 0, 0, 1
+			                    	3, 6, 0, 0, 0, 9
 			                    ],
 			                    backgroundColor: [
 			                        "#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
@@ -390,7 +402,7 @@
 		})();
 	})
     var timeline = {
-"Home Page Validation":35.934    };
+"Home Page Validation":35.28,"Login feature":40.088    };
     function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
