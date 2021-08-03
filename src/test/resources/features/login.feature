@@ -11,7 +11,7 @@ Feature: Login feature
 
     Examples: 
       | username                      | password |
-      | dparsons@landmarkdividend.com |      123 |
+      | user|      123 |
 
   @invalidLogin
   Scenario Outline: Check login with invalid credentials
@@ -23,4 +23,4 @@ Feature: Login feature
 
     Examples: 
       | username                  | password |
-      | user@landmarkdividend.com |     1234 |
+      | user |     1234 |
