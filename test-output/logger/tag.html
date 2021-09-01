@@ -46,6 +46,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -99,15 +107,15 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">@toolsqa</a>
+							<a href="#" class="item-title _500">@ui</a>
 							<div class="item-except text-sm text-muted h-1x">
-								2 tests
+								5 tests
 							</div>
 							<div class="tc d-none">
-								<h5>@toolsqa</h5>
+								<h5>@ui</h5>
 								<div class="mb-4">
-									<span class="badge pass text-pass">2 passed</span>
-									<span class="badge pass text-fail">0 failed</span>
+									<span class="badge pass text-pass">0 passed</span>
+									<span class="badge pass text-fail">5 failed</span>
 									<span class="badge pass text-skip">0 skipped</span>
 								</div>
 								<table class="table">
@@ -121,31 +129,92 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-pass" test-id="1" parent-id="1">
-	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
-	<td class="_600">ToolsQA </td>
-	<td>0h 0m 41s+759msc</td>
+<tr class="s-fail" test-id="1" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Home Page Validation </td>
+	<td>0h 0m 35s+280msc</td>
 	<td>		<span class="category-list attr-x">
-		<span class="category badge"><i class="fa fa-tag"></i> @toolsqa</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
 		</span>
 </td>
 	<td>
 	</td>
 	<td class="static"><i class="static fa fa-external-link"></i></td>
 </tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
 	
-<tr class="s-pass" test-id="2" parent-id="1">
-	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
-	<td class="_600">Demo of Iframes <br/><span class="text-muted text-sm">ToolsQA</span></td>
-	<td>0h 0m 41s+759msc</td>
+<tr class="s-fail" test-id="2" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login page is loading or not <br/><span class="text-muted text-sm">Home Page Validation</span></td>
+	<td>0h 0m 35s+280msc</td>
 	<td>		<span class="category-list attr-x">
-		<span class="category badge"><i class="fa fa-tag"></i> @toolsqa</span>
-		<span class="category badge"><i class="fa fa-tag"></i> @iframes</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @login</span>
 		</span>
 </td>
 	<td>
 	</td>
 	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="7" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Login feature </td>
+	<td>0h 0m 40s+88msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="9" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login with valid credentials <br/><span class="text-muted text-sm">Check login with valid credentials</span></td>
+	<td>0h 0m 20s+49msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @validLogin</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="18" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login with invalid credentials <br/><span class="text-muted text-sm">Check login with invalid credentials</span></td>
+	<td>0h 0m 20s+31msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @invalidLogin</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
 </tr>
 									</tbody>
 								</table>
@@ -153,21 +222,21 @@
 						</div>
 						<div>
 							<span class="item-meta text-xs lt">
-							<span class="badge pass text-pass">2</span> <span class="badge fail text-fail">0</span> <span class="badge skip text-skip">0</span>
+							<span class="badge pass text-pass">0</span> <span class="badge fail text-fail">5</span> <span class="badge skip text-skip">0</span>
 							</span>
 						</div>
 					</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">@iframes</a>
+							<a href="#" class="item-title _500">@login</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5>@iframes</h5>
+								<h5>@login</h5>
 								<div class="mb-4">
-									<span class="badge pass text-pass">1 passed</span>
-									<span class="badge pass text-fail">0 failed</span>
+									<span class="badge pass text-pass">0 passed</span>
+									<span class="badge pass text-fail">1 failed</span>
 									<span class="badge pass text-skip">0 skipped</span>
 								</div>
 								<table class="table">
@@ -181,18 +250,22 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-pass" test-id="2" parent-id="1">
-	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
-	<td class="_600">Demo of Iframes <br/><span class="text-muted text-sm">ToolsQA</span></td>
-	<td>0h 0m 41s+759msc</td>
+<tr class="s-fail" test-id="2" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login page is loading or not <br/><span class="text-muted text-sm">Home Page Validation</span></td>
+	<td>0h 0m 35s+280msc</td>
 	<td>		<span class="category-list attr-x">
-		<span class="category badge"><i class="fa fa-tag"></i> @toolsqa</span>
-		<span class="category badge"><i class="fa fa-tag"></i> @iframes</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @login</span>
 		</span>
 </td>
 	<td>
 	</td>
 	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
 </tr>
 									</tbody>
 								</table>
@@ -200,7 +273,143 @@
 						</div>
 						<div>
 							<span class="item-meta text-xs lt">
-							<span class="badge pass text-pass">1</span> <span class="badge fail text-fail">0</span> <span class="badge skip text-skip">0</span>
+							<span class="badge pass text-pass">0</span> <span class="badge fail text-fail">1</span> <span class="badge skip text-skip">0</span>
+							</span>
+						</div>
+					</div>
+					<div class="list-item attr">
+						<div class="list-body">
+							<a href="#" class="item-title _500">@validLogin</a>
+							<div class="item-except text-sm text-muted h-1x">
+								2 tests
+							</div>
+							<div class="tc d-none">
+								<h5>@validLogin</h5>
+								<div class="mb-4">
+									<span class="badge pass text-pass">0 passed</span>
+									<span class="badge pass text-fail">2 failed</span>
+									<span class="badge pass text-skip">0 skipped</span>
+								</div>
+								<table class="table">
+									<thead><tr>
+										<th id="status-col"></th>
+										<th>Test</th>
+										<th>Duration</th>
+										<th>Attributes</th>
+										<th>Media</th>
+										<th>Source</th>
+									</tr></thead>
+									<tbody>
+	
+<tr class="s-fail" test-id="8" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login with valid credentials <br/><span class="text-muted text-sm">Login feature</span></td>
+	<td>0h 0m 20s+49msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @validLogin</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="9" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login with valid credentials <br/><span class="text-muted text-sm">Check login with valid credentials</span></td>
+	<td>0h 0m 20s+49msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @validLogin</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div>
+							<span class="item-meta text-xs lt">
+							<span class="badge pass text-pass">0</span> <span class="badge fail text-fail">2</span> <span class="badge skip text-skip">0</span>
+							</span>
+						</div>
+					</div>
+					<div class="list-item attr">
+						<div class="list-body">
+							<a href="#" class="item-title _500">@invalidLogin</a>
+							<div class="item-except text-sm text-muted h-1x">
+								2 tests
+							</div>
+							<div class="tc d-none">
+								<h5>@invalidLogin</h5>
+								<div class="mb-4">
+									<span class="badge pass text-pass">0 passed</span>
+									<span class="badge pass text-fail">2 failed</span>
+									<span class="badge pass text-skip">0 skipped</span>
+								</div>
+								<table class="table">
+									<thead><tr>
+										<th id="status-col"></th>
+										<th>Test</th>
+										<th>Duration</th>
+										<th>Attributes</th>
+										<th>Media</th>
+										<th>Source</th>
+									</tr></thead>
+									<tbody>
+	
+<tr class="s-fail" test-id="17" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login with invalid credentials <br/><span class="text-muted text-sm">Login feature</span></td>
+	<td>0h 0m 20s+31msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @invalidLogin</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="18" parent-id="7">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Check login with invalid credentials <br/><span class="text-muted text-sm">Check login with invalid credentials</span></td>
+	<td>0h 0m 20s+31msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @ui</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @invalidLogin</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div>
+							<span class="item-meta text-xs lt">
+							<span class="badge pass text-pass">0</span> <span class="badge fail text-fail">2</span> <span class="badge skip text-skip">0</span>
 							</span>
 						</div>
 					</div>
@@ -231,7 +440,7 @@
 									        </a>
 								        </li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 17, 2021 08:09:15 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Aug 3, 2021 04:44:13 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

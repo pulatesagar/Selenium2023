@@ -10,12 +10,11 @@ import cucumber.api.junit.Cucumber;
 
 		features="classpath:features",
 		glue="stepdefs",
-        tags={"@toolsqa and not @windows", },
+        tags="@ui",
 		monochrome = true,
 		plugin = {"pretty",
 				"html:target/html/",
-				"json:target/json/file1.json",
-				"rerun:rerun/failed_scenarios.txt",
+				"json:target/json/file.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 		},
 		//strict=false,
@@ -24,5 +23,5 @@ import cucumber.api.junit.Cucumber;
 		)
 public class RunTest {
 
-
+	//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 }
