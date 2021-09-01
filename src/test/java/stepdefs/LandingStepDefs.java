@@ -18,6 +18,10 @@ import utils.manager.driver.factory.DriverManager;
 public class LandingStepDefs extends TestBase {
 	TestContextUI testContextUI;
 	Scenario scn;
+	
+	
+
+
 
 	public LandingStepDefs(TestContextUI testContextUI) {
 		this.testContextUI = testContextUI;
@@ -83,15 +87,48 @@ public class LandingStepDefs extends TestBase {
 		//testContextUI.landingPageObjects().clickLoginLinks();
 	}*/
 
-	@And("user should be redirected to the login page")
-	public void user_should_be_redirected_to_the_login_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	
-		testContextUI.landingPageObjects().urlValidate();
-		testContextUI.landingPageObjects().getPageTitle();
-	
-	
+	@When("I navigate to url {string}")
+	public void i_navigate_to_url(String string) {
+		testContextUI.landingPageObjects().navigateUrl(string);
 	}
+
+	@And("Search for {string} in the search bar")
+	public void search_for_in_the_search_bar(String string) {
+		testContextUI.landingPageObjects().searchProducts(string);
+
+	}
+
+	@And("Save the URL of Headphones")
+	public void save_the_URL_of_Headphones() {
+		testContextUI.landingPageObjects().saveProductUrl();
+    
+	}
+
+	@Then("Open a new tab")
+	public void open_a_new_tab() {
+		testContextUI.landingPageObjects().openNewTab();
+	}
+	@When("Click on demo button")
+	public void click_on_demo_button() throws InterruptedException {
+		testContextUI.landingPageObjects().clickOnClickMeDemo();
+	}
+
+	@Then("Select OK option")
+	public void select_OK_option() throws InterruptedException {
+		testContextUI.landingPageObjects().acceptOK();
+		testContextUI.landingPageObjects().cancelButton();
+	}
+	@And("I click on New Window button")
+	public void i_click_on_New_Window_button() throws InterruptedException {
+		testContextUI.landingPageObjects().childWindowHandle();
+	}
+	@And("I switch to frame")
+	public void i_switch_to_frame() throws InterruptedException {
+		testContextUI.landingPageObjects().iframeTestJavaScript();
+		
+	}
+
+
 
 
 

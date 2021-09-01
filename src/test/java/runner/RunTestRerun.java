@@ -1,28 +1,24 @@
 package runner;
-
 import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		features="classpath:features",
+		features="@rerun/failed_scenarios1.txt",
 		glue="stepdefs",
-        tags={"@toolsqa and not @windows", },
+        //tags={"@am"},
 		monochrome = true,
 		plugin = {"pretty",
 				"html:target/html/",
-				"json:target/json/file1.json",
-				"rerun:rerun/failed_scenarios.txt",
+				"json:target/json/file2.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 		},
-		//strict=false,
+		strict=false,
 		dryRun=false
 
 		)
-public class RunTest {
-
+public class RunTestRerun {
 
 }
