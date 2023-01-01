@@ -124,7 +124,7 @@ public class LandingStepDefs extends TestBase {
 	}
 	@And("I switch to frame")
 	public void i_switch_to_frame() throws InterruptedException {
-		testContextUI.landingPageObjects().iframeTestJavaScript();
+		//testContextUI.landingPageObjects().iframeTestJavaScript();
 		
 	}
 

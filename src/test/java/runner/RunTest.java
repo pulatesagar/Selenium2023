@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 
 		features="classpath:features",
 		glue="stepdefs",
-        tags={"@toolsqa and not @windows", },
+        tags={"@toolsqa" },
 		monochrome = true,
 		plugin = {"pretty",
 				"html:target/html/",

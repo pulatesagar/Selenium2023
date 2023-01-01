@@ -1,4 +1,4 @@
-@ui
+@ui @update
 Feature: Navigate to https://github.com/
 
 
