@@ -105,7 +105,7 @@ public class LandingPageObjects extends Interact {
 		{
 			
             clickElement(clikMebtn);
-            
+            //testing
         }
 	}
 	public void acceptOK() throws InterruptedException {
