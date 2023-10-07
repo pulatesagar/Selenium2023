@@ -25,6 +25,7 @@ public class LandingPageObjects extends Interact {
 	private By searchBox = By.xpath("//*[@id=\"twotabsearchtextbox\"]");
 	private By searchButton = By.xpath("//*[@id=\"nav-search-submit-button\"]");
 	private By clikMebtn = By.xpath("//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/button");
+	//testing
 	
 	
 

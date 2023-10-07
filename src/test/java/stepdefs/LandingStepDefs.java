@@ -25,7 +25,7 @@ public class LandingStepDefs extends TestBase {
 
 	public LandingStepDefs(TestContextUI testContextUI) {
 		this.testContextUI = testContextUI;
-		//tesr
+		//testing push
 	}
 	
 	@Before
@@ -46,6 +46,7 @@ public class LandingStepDefs extends TestBase {
 		
 		testContextUI.getDriver().quit();
 		scn.write("Browser is Closed");
+		//push testing
 	}
 	
 	
